@@ -839,7 +839,8 @@ void render()
 			glPushMatrix();
 			glTranslatef(a->pos[0], a->pos[1], a->pos[2]);
 			glRotatef(a->angle, 0.0f, 0.0f, 1.0f);
-			glBegin(GL_LINE_LOOP);
+			//glBegin(GL_LINE_LOOP);
+			glBegin(GL_TRIANGLE_FAN);
 			//Log("%i verts\n",a->nverts);
 			for (int j=0; j<a->nverts; j++) {
 				glVertex2f(a->vert[j][0], a->vert[j][1]);
