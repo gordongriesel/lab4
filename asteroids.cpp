@@ -788,6 +788,7 @@ void render()
 	//-------------------------------------------------------------------------
 	//Draw the ship
 	glColor3fv(g.ship.color);
+	glColor3ub(255, 0, 0);
 	glPushMatrix();
 	glTranslatef(g.ship.pos[0], g.ship.pos[1], g.ship.pos[2]);
 	//float angle = atan2(ship.dir[1], ship.dir[0]);
